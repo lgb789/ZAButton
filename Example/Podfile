@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZAButton_Example' do
+  pod 'ZAButton', :path => '../'
+
+  target 'ZAButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
