@@ -22,8 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		603F1CB93E7FB4467BA7DA64 /* Pods_ZAButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9101501B5101CACCACBB32EC /* Pods_ZAButton_Tests.framework */; };
 		6BA4D7941EFB63E41FC133C6 /* Pods_ZAButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D1BF89588723FAC33B37B7 /* Pods_ZAButton_Example.framework */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B8C78602209B052300F59737 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C78600209B052200F59737 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		23D1BF89588723FAC33B37B7 /* Pods_ZAButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		254372C6D8F8B1D9F00FFCC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		254372C6D8F8B1D9F00FFCC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3E86580DB0D29E6073128248 /* Pods-ZAButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZAButton_Tests/Pods-ZAButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZAButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,12 +58,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9101501B5101CACCACBB32EC /* Pods_ZAButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E0E80D861CBAF0E7156D96 /* Pods-ZAButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZAButton_Example/Pods-ZAButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9F0F3515705733CCA4A6FAB1 /* ZAButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZAButton.podspec; path = ../ZAButton.podspec; sourceTree = "<group>"; };
-		D2FF7FEDCF454552BBBD9CBF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9F0F3515705733CCA4A6FAB1 /* ZAButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZAButton.podspec; path = ../ZAButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B8C78600209B052200F59737 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		B8C78601209B052300F59737 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		B8C78603209B0A6900F59737 /* LGBLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBLog.h; sourceTree = "<group>"; };
+		D2FF7FEDCF454552BBBD9CBF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EBE2AA5C73972D69D2F2D6FD /* Pods-ZAButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZAButton_Example/Pods-ZAButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F5BC1AC27BFC3AF5964C29C8 /* Pods-ZAButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZAButton_Tests/Pods-ZAButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,12 +143,13 @@
 		6003F593195388D20070C39A /* Example for ZAButton */ = {
 			isa = PBXGroup;
 			children = (
+				B8C78603209B0A6900F59737 /* LGBLog.h */,
+				B8C78601209B052300F59737 /* CustomView.h */,
+				B8C78600209B052200F59737 /* CustomView.m */,
 				6003F59C195388D20070C39A /* ZAAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZAAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZAViewController.h */,
 				6003F5A6195388D20070C39A /* ZAViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -250,7 +251,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lgb789;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7CKU2V5F6W;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 7CKU2V5F6W;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -279,8 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ZAAppDelegate.m in Sources */,
+				B8C78602209B052300F59737 /* CustomView.m in Sources */,
 				6003F5A7195388D20070C39A /* ZAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -442,14 +446,6 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -533,12 +529,15 @@
 			baseConfigurationReference = EBE2AA5C73972D69D2F2D6FD /* Pods-ZAButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZAButton/ZAButton-Prefix.pch";
 				INFOPLIST_FILE = "ZAButton/ZAButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,12 +547,15 @@
 			baseConfigurationReference = 97E0E80D861CBAF0E7156D96 /* Pods-ZAButton_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZAButton/ZAButton-Prefix.pch";
 				INFOPLIST_FILE = "ZAButton/ZAButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -563,6 +565,7 @@
 			baseConfigurationReference = 3E86580DB0D29E6073128248 /* Pods-ZAButton_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -587,6 +590,7 @@
 			baseConfigurationReference = F5BC1AC27BFC3AF5964C29C8 /* Pods-ZAButton_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

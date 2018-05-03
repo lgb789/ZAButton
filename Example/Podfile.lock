@@ -1,0 +1,16 @@
+PODS:
+  - ZAButton (0.1.0)
+
+DEPENDENCIES:
+  - ZAButton (from `../`)
+
+EXTERNAL SOURCES:
+  ZAButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZAButton: fcf728314aa9ca10253c6f8dd81cf72c7c962136
+
+PODFILE CHECKSUM: 79d7c4dd9fa978645a4e0a6dbecc248f11834b29
+
+COCOAPODS: 1.4.0

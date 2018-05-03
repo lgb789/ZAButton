@@ -7,9 +7,10 @@
 //
 
 #import "ZAViewController.h"
+#import "CustomView.h"
 
 @interface ZAViewController ()
-
+@property (nonatomic, strong) CustomView *customView;
 @end
 
 @implementation ZAViewController
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.customView = [[CustomView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.customView];
 }
 
 - (void)didReceiveMemoryWarning

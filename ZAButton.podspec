@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+设置UIButton图片位置，上、下、左、右
                        DESC
 
   s.homepage         = 'https://github.com/lgb789/ZAButton'

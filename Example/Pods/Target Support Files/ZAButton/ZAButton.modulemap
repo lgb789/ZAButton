@@ -1,0 +1,6 @@
+framework module ZAButton {
+  umbrella header "ZAButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
