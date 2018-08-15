@@ -51,34 +51,30 @@
 {
     if (position == ZAButtonImagePositionTop) {
         
-        CGFloat margin = (CGRectGetHeight(self.bounds) - CGRectGetHeight(self.imageView.bounds) - CGRectGetHeight(self.titleLabel.bounds) - padding) * 0.5;
+        self.titleEdgeInsets = UIEdgeInsetsMake(CGRectGetHeight(self.imageView.bounds) + CGRectGetHeight(self.titleLabel.bounds) + padding, -CGRectGetWidth(self.imageView.bounds), 0, 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -CGRectGetWidth(self.titleLabel.bounds));
         
-        self.imageView.frame = CGRectMake(CGRectGetMidX(self.bounds) - CGRectGetMidX(self.imageView.bounds), margin, CGRectGetWidth(self.imageView.bounds), CGRectGetHeight(self.imageView.bounds));
-        
-        self.titleLabel.frame = CGRectMake(CGRectGetMidX(self.bounds) - CGRectGetMidX(self.titleLabel.bounds), CGRectGetMaxY(self.imageView.frame) + padding, CGRectGetWidth(self.titleLabel.bounds), CGRectGetHeight(self.titleLabel.bounds));
+        self.contentEdgeInsets = UIEdgeInsetsMake(0, 0, CGRectGetHeight(self.titleLabel.bounds) + padding / 2, 0);
         
     }else if (position == ZAButtonImagePositionLeft){
         
-        CGFloat margin = (CGRectGetWidth(self.bounds) - CGRectGetWidth(self.imageView.bounds) - CGRectGetWidth(self.titleLabel.bounds) - padding) * 0.5;
-        self.imageView.frame = CGRectMake(margin, CGRectGetMidY(self.bounds) - CGRectGetMidY(self.imageView.bounds), CGRectGetWidth(self.imageView.bounds), CGRectGetHeight(self.imageView.bounds));
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -padding);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
         
-        self.titleLabel.frame = CGRectMake(CGRectGetMaxX(self.imageView.frame) + padding, CGRectGetMidY(self.bounds) - CGRectGetMidY(self.titleLabel.bounds), CGRectGetWidth(self.titleLabel.bounds), CGRectGetHeight(self.titleLabel.bounds));
+        self.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, padding / 2);
         
     }else if (position == ZAButtonImagePositionBottom){
- 
-        CGFloat margin = (CGRectGetHeight(self.bounds) - CGRectGetHeight(self.imageView.bounds) - CGRectGetHeight(self.titleLabel.bounds) - padding) * 0.5;
+
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, -CGRectGetWidth(self.imageView.bounds), CGRectGetHeight(self.imageView.bounds) + CGRectGetHeight(self.titleLabel.bounds) + padding, 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -CGRectGetWidth(self.titleLabel.bounds));
         
-        self.titleLabel.frame = CGRectMake(CGRectGetMidX(self.bounds) - CGRectGetMidX(self.titleLabel.bounds), margin, CGRectGetWidth(self.titleLabel.bounds), CGRectGetHeight(self.titleLabel.bounds));
-        
-        self.imageView.frame = CGRectMake(CGRectGetMidX(self.bounds) - CGRectGetMidX(self.imageView.bounds), CGRectGetMaxY(self.titleLabel.frame) + padding, CGRectGetWidth(self.imageView.bounds), CGRectGetHeight(self.imageView.bounds));
-        
+        self.contentEdgeInsets = UIEdgeInsetsMake(CGRectGetHeight(self.titleLabel.bounds) + padding / 2, 0, 0, 0);
     }else if (position == ZAButtonImagePositionRight){
+
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, -(CGRectGetWidth(self.imageView.bounds) * 2), 0, 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -(CGRectGetWidth(self.titleLabel.bounds) * 2 + padding));
         
-        CGFloat margin = (CGRectGetWidth(self.bounds) - CGRectGetWidth(self.imageView.bounds) - CGRectGetWidth(self.titleLabel.bounds) - padding) * 0.5;
-        
-        self.titleLabel.frame = CGRectMake(margin, CGRectGetMidY(self.bounds) - CGRectGetMidY(self.titleLabel.bounds), CGRectGetWidth(self.titleLabel.bounds), CGRectGetHeight(self.titleLabel.bounds));
-        
-        self.imageView.frame = CGRectMake(CGRectGetMaxX(self.titleLabel.frame) + padding, CGRectGetMidY(self.bounds) - CGRectGetMidY(self.imageView.bounds), CGRectGetWidth(self.imageView.bounds), CGRectGetHeight(self.imageView.bounds));
+        self.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, padding / 2);
         
     }
 }
